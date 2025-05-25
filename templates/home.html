@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio | Ciudad Inteligente</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+
+<body>
+<div class="inicio-page">
+  <div class="contenido">
+    <!-- LADO IZQUIERDO -->
+<div class="inicio-left">
+  <h1>Ciudad Inteligente: Gestión de Residuos</h1>
+
+  <!-- Nueva sección de contexto -->
+  <section class="contexto-proyecto">
+    <h2 style="color:#00ffae;">Contexto del Problema</h2>
+    <p>
+      En las ciudades modernas, la gestión eficiente de residuos es un reto ambiental y logístico. Este sistema simula una red de sensores IoT instalados en canecas de uso público, que registran variables como porcentaje de llenado, temperatura, gases, vandalismo y ubicación.
+    </p>
+
+    <h2 style="color:#00ffae;">Objetivos del Proyecto</h2>
+    <ul>
+      <li>✅ Monitorear el estado de recolección en tiempo real.</li>
+      <li>✅ Optimizar rutas de camiones recolectores con base en alertas y niveles de llenado.</li>
+      <li>✅ Centralizar la información en un Data Warehouse multidimensional.</li>
+      <li>✅ Facilitar la toma de decisiones mediante visualizaciones interactivas en Power BI.</li>
+      <li>✅ Aumentar la sostenibilidad urbana reduciendo viajes innecesarios y previniendo desbordes.</li>
+    </ul>
+  </section>
+
+  <!-- Carrusel -->
+  <div class="slider-wrapper">
+    <div class="slider-track">
+      <div class="slide"><img src="{{ url_for('static', filename='img/C1.png') }}" alt="Imagen 1"></div>
+      <div class="slide"><img src="{{ url_for('static', filename='img/C2.png') }}" alt="Imagen 2"></div>
+      <div class="slide"><img src="{{ url_for('static', filename='img/C3.png') }}" alt="Imagen 3"></div>
+      <div class="slide"><img src="{{ url_for('static', filename='img/C4.png') }}" alt="Imagen 4"></div>
+      <div class="slide"><img src="{{ url_for('static', filename='img/C5.png') }}" alt="Imagen 5"></div>
+      <div class="slide"><img src="{{ url_for('static', filename='img/C1.png') }}" alt="Imagen 1"></div>
+      <div class="slide"><img src="{{ url_for('static', filename='img/C2.png') }}" alt="Imagen 2"></div>
+      <div class="slide"><img src="{{ url_for('static', filename='img/C3.png') }}" alt="Imagen 3"></div>
+      <div class="slide"><img src="{{ url_for('static', filename='img/C4.png') }}" alt="Imagen 4"></div>
+      <div class="slide"><img src="{{ url_for('static', filename='img/C5.png') }}" alt="Imagen 5"></div>
+    </div>
+  </div>
+</div>
+
+    <!-- LADO DERECHO -->
+    <div class="inicio-right">
+      <img src="{{ url_for('static', filename='img/Inicio.png') }}" alt="Ciudad Inteligente" class="inicio-img">
+      <a href="/dashboard"><button class="btn-dashboard">Ver Dashboard</button></a>
+      <a href="/mapa"><button class="btn-dashboard" style="margin-top: 15px;">Ver Mapa Interactivo</button></a>
+    </div>
+  </div> <!-- CIERRE de .contenido -->
+</div> <!-- CIERRE de .inicio-page -->
+
+<footer>
+  <p>Desarrollado por Sara Vargas - Juan David Mahete © 2025 | Sistema de Ciudad Inteligente</p>
+</footer>
+</body>
+</html>
